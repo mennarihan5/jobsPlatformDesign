@@ -1,0 +1,167 @@
+@import url(./globalStyles.css);
+
+/* TOP HEADER */
+.header {
+    background-color: var(--dark-grey-1);
+}
+.header__user-logo {
+
+}
+.header__nav  {
+    display: none;
+}
+.header__menu {
+
+}
+.header__menu-one {
+
+}
+.header__menu-two {
+
+}
+.header__menu-item {
+
+}
+.header__search-wrapper {
+
+}
+.header__logo {
+
+}
+.header__search-bar {
+    display: none;
+}
+
+
+/* MAIN */
+/* BOTTOM HEADER */
+.main {
+
+}
+.menu {
+
+}
+.menu__nav {
+
+}
+.menu__data {
+
+}
+.menu__positions {
+
+}
+.menu__alert {
+
+}
+.menu__alert-text {
+
+}
+.menu__alert-btn  {
+
+}
+.menu__icon {
+
+}
+/* SIDE BAR */
+.side-menu {
+    display: none;
+}
+.side-menu__title {
+
+}
+.side-menu__list {
+
+}
+.side-menu__item {
+
+}
+.side-menu__toggle-icon {
+
+}
+.side-menu__sub-list {
+
+}
+.side-menu__sub-item {
+
+}
+.side-menu__toggle-icon {
+
+}
+/* JOBS LISTS */
+.jobs-list {
+
+}
+.job-list__job {
+
+}
+.job-list__job {
+
+}
+.job-list__job-info {
+
+}
+.jobs-list__title-wrapper {
+
+}
+.jobs-list__img {
+
+}
+.jobs-list__title {
+
+}
+.jobs-list__job-title {
+
+}
+.jobs-list__job-company {
+
+}
+.jobs-list__icon {
+
+}
+.jobs-list__location-info {
+
+}
+.jobs-list__location {
+
+}
+.jobs-list__date {
+
+}
+.jobs-list__work-info {
+
+}
+.jobs-list__exp {
+
+}
+.jobs-list__time {
+
+}
+.jobs-list__remote {
+
+}
+.jobs-list__categories {
+
+}
+.jobs-list__category {
+
+}
+.jobs-list__span {
+
+}
+.job-list__desktop {
+
+}
+
+/* PAGINATION */
+.pagination {
+
+}
+.pagination__icon {
+
+}
+.pagination__nums {
+
+}
+.pagination__icon {
+
+}

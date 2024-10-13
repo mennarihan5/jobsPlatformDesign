@@ -1,0 +1,36 @@
+@import 'normalize.css';
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* COLORS */
+:root {
+    --green-1: #3D8E41;
+    --green-2: #14A077;
+    --green-3: #48A74C;
+    --light-green-1: #F3FDF3;
+    --dark-grey-1: #161616;
+    --medium-grey-1: #707070;
+    --medium-grey-2: #404040;
+    --light-grey-1: #C4C3C3;
+    --light-grey-2: #F7F7F7;
+    --red-1: #ED1F03;
+}
+
+/* UTILITY CLASSES */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
