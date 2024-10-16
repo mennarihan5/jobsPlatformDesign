@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // SORT BY TOGGLE
     sortBySelect.addEventListener('click', () => {
         console.log(sortBySelect)
-        options.classList.add('open');
+        options.classList.toggle('open');
     });
 
     option.forEach(option => {

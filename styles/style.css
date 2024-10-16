@@ -1,6 +1,4 @@
-@import url(./globalStyles.css);
-
-/* TOP HEADER */
+@import url(./globalStyles.css); /* TOP HEADER */
 .header {
     background-color: var(--dark-grey-1);
     color: var(--white);
@@ -43,9 +41,9 @@
     right: 0;
     width: 75%;
     height: 100vh;
-    transform: translateX(100%); 
+    transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 .header .header__nav-wrapper {
@@ -67,6 +65,9 @@
     padding: 5% 0;
     margin: auto;
 }
+.header__user-account-wrapper .desktop {
+    display: none;
+}
 .header__user-img {
     width: 15%;
 }
@@ -85,7 +86,7 @@
 }
 .header__user-position {
     font-weight: 400;
-    font-size:0.93rem;
+    font-size: 0.93rem;
     font-size: clamp(0.87rem, 3vw, 0.93rem);
     color: var(--medium-grey-1);
 }
@@ -94,7 +95,7 @@
     font-size: clamp(0.87rem, 3vw, 1rem);
     color: var(--light-grey-1);
 }
-.header__nav  {
+.header__nav {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -106,14 +107,15 @@
     align-items: start;
     padding: 0 8%;
 }
-.header__menu-one-wrapper, .header__menu-two-wrapper {
+.header__menu-one-wrapper,
+.header__menu-two-wrapper {
     width: 100%;
     padding-bottom: 1.13rem;
     border-bottom: 1px solid var(--light-grey-3);
     margin-bottom: 1.13rem;
 }
 .header__menu-one {
-    margin-top: 5%;    
+    margin-top: 5%;
 }
 .header__menu-two .profile {
     display: none;
@@ -131,10 +133,10 @@
     width: 2rem;
     height: 2rem;
 }
-.header__menu-item span img  {
+.header__menu-item span img {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
     display: block;
 }
 .header__menu-item a {
@@ -145,7 +147,6 @@
 }
 .header__account-menu {
     width: 100%;
-    
 }
 .header__account-list {
     flex-direction: column;
@@ -179,19 +180,17 @@
 }
 .header__search-bar {
     display: none;
-}
-
-/* TOP HEADER MEDIA QUERY */
+} /* TOP HEADER MEDIA QUERY */
 @media (min-width: 480px) {
     .header__user-logo .fa-bars {
         right: 0;
     }
-} 
+}
 @media (min-width: 600px) {
     .header__user-logo .fa-bars {
         right: 30%;
     }
-} 
+}
 @media (min-width: 768px) {
     .header__user-logo .fa-bars {
         right: 40%;
@@ -206,7 +205,7 @@
         z-index: 100;
     }
     .header__search-wrapper {
-        display: flex;  
+        display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 5%;
@@ -265,9 +264,9 @@
         height: 100%;
         position: relative;
     }
-    .header__nav  {
+    .header__nav {
         flex-direction: row;
-        align-items: center; 
+        align-items: center;
         width: 100%;
         margin-right: -30%;
     }
@@ -276,7 +275,8 @@
         align-items: center;
         gap: 1rem;
     }
-    .header__menu-one-wrapper, .header__menu-two-wrapper {
+    .header__menu-one-wrapper,
+    .header__menu-two-wrapper {
         border-bottom: none;
         width: 100%;
         margin: 0;
@@ -311,19 +311,18 @@
         background-color: var(--white);
         border-radius: 0.68rem;
         border: 1px solid var(--light-grey-7);
-        box-shadow: 0px 10px 15px -3px var(--light-grey-2),
-        0px 4px 0px -84px var(--light-grey-2);
+        box-shadow: 0px 10px 15px -3px var(--light-grey-2), 0px 4px 0px -84px var(--light-grey-2);
         height: auto;
         position: absolute;
         right: 0;
         top: 10vh;
         padding: 3% 0;
         opacity: 0;
-        transition: opacity 0.5s ease-in-out; 
+        transition: opacity 0.5s ease-in-out;
         pointer-events: none;
     }
     .header__account-menu.show-menu {
-        opacity: 1; 
+        opacity: 1;
         pointer-events: all;
     }
     .header__account-list {
@@ -333,13 +332,13 @@
         position: relative;
     }
     .header__account-list::after {
-        content: '';                     
-        position: absolute;              
+        content: "";
+        position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 0; 
+        bottom: 0;
         border-bottom: 1px solid var(--light-grey-3);
-        width: calc(100% + 10%); 
+        width: calc(100% + 10%);
     }
     .header__account-logout {
         padding: 3% 0;
@@ -348,32 +347,30 @@
         width: 100%;
     }
     .header__user-logo {
-            display: none;
+        display: none;
     }
     .header__menu .profile {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-            margin-left: -3%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-left: -3%;
     }
     .header__menu .header__profile {
-            gap: 20%;
+        gap: 20%;
     }
     .header__menu .header__profile .fa-sort-down {
-            height: 1.5rem;
+        height: 1.5rem;
     }
     .header__user-logo .fa-bars {
         display: none;
     }
-}
-/* MAIN */
+} /* MAIN */
 .main {
     width: 90%;
     margin: auto;
     padding: 2% 0;
     position: relative;
-}
-/* MAIN MEDIA QUERY */
+} /* MAIN MEDIA QUERY */
 @media (min-width: 1024px) {
     .main {
         width: 100%;
@@ -393,9 +390,7 @@
     .main__left {
         width: 25%;
     }
-}
-
-/* SORT BY */
+} /* SORT BY */
 .sort-by {
     width: 35%;
     background-color: var(--white);
@@ -418,7 +413,6 @@
 }
 .sort-by__label {
     color: var(--medium-grey-2);
-    
 }
 .selected-option {
     margin-bottom: 3%;
@@ -426,7 +420,7 @@
     cursor: pointer;
 }
 .options {
-    display: none; 
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -447,15 +441,12 @@
 }
 .open {
     display: block;
-}
-/* SORT BY MEDIA QUERY */
+} /* SORT BY MEDIA QUERY */
 @media (min-width: 1024px) {
     .sort-by {
         display: block;
     }
-}
-
-/* BOTTOM HEADER */
+} /* BOTTOM HEADER */
 .menu {
     height: 3.5rem;
     gap: 2%;
@@ -532,9 +523,7 @@
     align-items: center;
     color: var(--medium-grey-5);
     cursor: pointer;
-}
-
-/* BOTTOM HEADER MEDIA QUERY */
+} /* BOTTOM HEADER MEDIA QUERY */
 @media (min-width: 480px) {
     .menu__icon {
         width: 4.5rem;
@@ -566,9 +555,7 @@
     .menu__alert {
         width: 15%;
     }
-}
-
-/* SIDE BAR */
+} /* SIDE BAR */
 .side-menu {
     background-color: var(--white);
     width: 100%;
@@ -639,7 +626,7 @@
 .side-menu__list .last-item {
     display: none;
 }
-.side-menu__list .show-last{
+.side-menu__list .show-last {
     display: flex;
 }
 .side-menu__sub-item {
@@ -653,11 +640,12 @@
     width: 2rem;
     height: 2rem;
 }
-.side-menu__settings-wrapper .show-settings{
+.side-menu__settings-wrapper .show-settings {
     display: block;
     z-index: -1;
 }
-.side-menu__toggle-open .fa-check, .fa-xmark {
+.side-menu__toggle-open .fa-check,
+.fa-xmark {
     font-size: 1.5rem;
     border: 1px solid var(--green-1);
     border-radius: 50%;
@@ -705,9 +693,7 @@
 }
 .show-edit-icons {
     display: block;
-}
-
-/* SIDE BAR MEDIA QUERY */
+} /* SIDE BAR MEDIA QUERY */
 @media (min-width: 1024px) {
     .side-menu {
         position: fixed;
@@ -731,7 +717,8 @@
         align-items: center;
         gap: 10%;
     }
-    .side-menu__toggle-open .fa-xmark, .side-menu__toggle-open .fa-check {
+    .side-menu__toggle-open .fa-xmark,
+    .side-menu__toggle-open .fa-check {
         display: flex;
         width: 2.2rem;
         height: 2.2rem;
@@ -740,9 +727,7 @@
     .side-menu__title .fa-arrow-left {
         display: none;
     }
-}
-
-/* JOBS LISTS */
+} /* JOBS LISTS */
 .job-list__job {
     border: 1px solid var(--light-grey-3);
     border-radius: 0.146rem;
@@ -757,13 +742,13 @@
     position: relative;
 }
 .job-list__job-info::after {
-    content: '';                     
-    position: absolute;              
+    content: "";
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -8%; 
+    bottom: -8%;
     border-bottom: 1px solid var(--light-grey-3);
-    width: calc(100% + 10%); 
+    width: calc(100% + 10%);
 }
 .jobs-list__title-wrapper {
     align-items: normal;
@@ -814,18 +799,22 @@
     color: var(--medium-grey-1);
     width: 100%;
 }
-.jobs-list__location, .jobs-list__date {
+.jobs-list__location,
+.jobs-list__date {
     gap: 5%;
 }
-.jobs-list__location p, .jobs-list__date p {
+.jobs-list__location p,
+.jobs-list__date p {
     width: auto;
     white-space: nowrap;
 }
-.jobs-list__location img, .jobs-list__date img {
+.jobs-list__location img,
+.jobs-list__date img {
     width: 15%;
     flex-shrink: 0;
 }
-.jobs-list__location p, .jobs-list__date p {
+.jobs-list__location p,
+.jobs-list__date p {
     font-weight: 400;
     font-size: 1.063rem;
     font-size: clamp(0.68rem, 3vw, 1.063rem);
@@ -839,7 +828,9 @@
     justify-content: flex-start;
     gap: 3%;
 }
-.jobs-list__exp, .jobs-list__time, .jobs-list__remote {
+.jobs-list__exp,
+.jobs-list__time,
+.jobs-list__remote {
     background-color: var(--light-grey-2);
     padding: 2% 4%;
     border-radius: 0.11rem;
@@ -851,9 +842,7 @@
     font-size: 1.063rem;
     font-size: clamp(0.62rem, 2.5vw, 1.063rem);
     justify-content: flex-start;
-}
-
-/* JOB LISTS MEDIA QUERY */
+} /* JOB LISTS MEDIA QUERY */
 @media (min-width: 1024px) {
     .job-list__job {
         background-color: var(--white);
@@ -867,10 +856,7 @@
     .jobs-list__icon-right .fa-heart {
         font-size: 1.2rem;
     }
-    
-}
-
-/* PAGINATION */
+} /* PAGINATION */
 .pagination {
     justify-content: center;
     color: var(--medium-grey-1);
@@ -878,7 +864,8 @@
     margin-bottom: 10%;
     gap: 2%;
 }
-.pagination__icon, .pagination__nums  {
+.pagination__icon,
+.pagination__nums {
     border: 1px solid var(--light-grey-1);
     border-radius: 0.16rem;
     width: 1.26rem;
@@ -889,7 +876,8 @@
     font-size: 0.8rem;
     cursor: pointer;
 }
-.pagination__icon:hover, .pagination__nums:hover {
+.pagination__icon:hover,
+.pagination__nums:hover {
     background-color: var(--green-1);
     color: var(--white);
 }
