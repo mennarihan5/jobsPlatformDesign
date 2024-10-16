@@ -1,5 +1,3 @@
-@import 'normalize.css';
-
 /* GLOBAL */
 * {
     margin: 0;
@@ -10,6 +8,8 @@
 
 /* COLORS */
 :root {
+    --black: #000;
+    --white: #fff;
     --green-1: #3D8E41;
     --green-2: #14A077;
     --green-3: #48A74C;
@@ -17,8 +17,16 @@
     --dark-grey-1: #161616;
     --medium-grey-1: #707070;
     --medium-grey-2: #404040;
+    --medium-grey-3: #5B5B5B;
+    --medium-grey-4: #7D7D7D;
+    --medium-grey-5: #6B6B6B;
     --light-grey-1: #C4C3C3;
     --light-grey-2: #F7F7F7;
+    --light-grey-3: #F0F0F0;
+    --light-grey-4: #CDCDCD;
+    --light-grey-5: rgba(196, 195, 195, 0.5);
+    --light-grey-6: #E9E9E9;
+    --light-grey-7: #D8D8D8;
     --red-1: #ED1F03;
 }
 

@@ -9,310 +9,412 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Izam Test</title>
 </head>
 <body>
     <!-- TOP HEADER -->
     <header class="header flex-container">
-        <div class="header__user-logo">
-            <img src="./assets/images/user-logo.svg" alt="Logo" loading="lazy">
-        </div>
-        <nav class="header__nav flex-container">
-            <ul class="header__menu header__menu-one flex-container">
-                <li class="header__menu-item"><a href="#">Home</a></li>
-                <li class="header__menu-item"><a href="#">Jobs</a></li>
-                <li class="nav-menu-item"><a href="#">Employers</a></li>
-            </ul>
-            <ul class="header__menu header__menu-two flex-container">
-                <li class="header__menu-item"><a href="#">Notifications</a></li>
-                <li class="header__menu-item"><a href="#">Messaging</a></li>
-                <li class="header__menu-item"><a href="#">Profile</a></li>
-            </ul>
-        </nav>
         <div class="header__search-wrapper">
             <div class="header__logo">
                 <img src="./assets/images/iZAM.svg" alt="Logo" loading="lazy">
             </div>
-            <div class="header__search-bar">
+            <div class="header__search-bar flex-container">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" name="search" id="search">
+                <input type="search" name="search" id="search" placeholder="Search by name, job title, ...">
             </div>
+        </div>
+        <div class="header__outer-wrapper">
+            <div class="header__nav-wrapper flex-container">
+                <div class="header__user-account-wrapper">
+                    <div class="header__user-account flex-container">
+                        <div class="header__user-img">
+                            <img src="./assets/images/user-logo.svg" alt="User Image">
+                        </div>
+                        <div class="header__user-info">
+                            <h3 class="header__user-name">Ahmed Amaar</h3>
+                            <p class="header__user-position">UX UI designer</p>
+                        </div>
+                        <div class="header__user-icon">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <nav class="header__nav flex-container">
+                    <div class="header__menu-one-wrapper">
+                        <ul class="header__menu header__menu-one flex-container">
+                            <li class="header__menu-item flex-container">
+                                <span><img src="./assets/images/home.svg" alt="Home Icon"></span>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="header__menu-item flex-container">
+                                <span><img src="./assets/images/Bag.svg" alt="Jobs Icon"></span>
+                                <a href="#">Jobs</a>
+                            </li>
+                            <li class="header__menu-item flex-container">
+                                <span><img src="./assets/images/employers.svg" alt="Employers Icon"></span>
+                                <a href="#">Employers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__menu-two-wrapper">
+                        <ul class="header__menu header__menu-two flex-container">
+                            <li class="header__menu-item flex-container">
+                                <span><img src="./assets/images/alert.svg" alt="Notifications Icon"></span>
+                                <a href="#">Notifications</a>
+                            </li>
+                            <li class="header__menu-item flex-container">
+                                <span><img src="./assets/images/msg.svg" alt="Messages Icon"></span>
+                                <a href="#">Messaging</a>
+                            </li>
+                            <li class="header__menu-item profile flex-container">
+                                <span><img src="./assets/images/user-logo.svg" alt="Profile Icon"></span>
+                                <div class="header__profile flex-container">
+                                    <a href="#">Profile</a>
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__account-menu">
+                    <div class="header__user-account-wrapper show-user">
+                        <div class="header__user-account flex-container">
+                            <div class="header__user-img">
+                                <img src="./assets/images/user-logo.svg" alt="User Image">
+                            </div>
+                            <div class="header__user-info">
+                                <h3 class="header__user-name">Ahmed Amaar</h3>
+                                <p class="header__user-position">UX UI designer</p>
+                            </div>
+                            <div class="header__user-icon">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__account-list flex-container">
+                        <li class="header__account-item">Setting and privacy</li>
+                        <li class="header__account-item">Language</li>
+                        <li class="header__account-item">Help</li>
+                    </ul>
+                    <div class="header__account-logout">
+                        <p>Logout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__user-logo">
+            <img src="./assets/images/user-logo.svg" alt="Logo" loading="lazy">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
     <!-- MAIN -->
     <main class="main">
         <!-- BOTTOM HEADER -->
-        <section class="menu flex-container">
-            <div class="menu__nav">
-                <h4 class="menu__title">UI Designer in Egypt</h4>
-                <div class="menu__data flex-container">
-                    <p class="menu__positions">70 job positions</p>
-                    <div class="menu__alert">
-                        <p class="menu__alert-text">Set alert</p>
-                        <div class="menu__alert-btn flex-container">
-                            <button></button>
+        <div class="main__wrapper">
+            <div class="main__right">
+                 <!-- SORT BY -->
+                <div class="sort-by">
+                    <div class="sort-by__select">
+                        <div class="sort-by__placeholder flex-container">
+                            <p class="sort-by__label">Sorting by:</p>
+                            <div class="selected-option">Top match</div>
+                        </div>
+                        <div class="options">
+                            <div class="sort-by__option">Top match</div>
+                            <div class="sort-by__option">Newest</div>
+                            <div class="sort-by__option">Latest</div>
                         </div>
                     </div>
                 </div>
+                <!-- MENU -->
+                <section class="menu flex-container">
+                    <div class="menu__nav">
+                        <h4 class="menu__title">UI Designer in Egypt</h4>
+                        <div class="menu__data flex-container">
+                            <p class="menu__positions">70 job positions</p>
+                            <div class="menu__alert flex-container">
+                                <p class="menu__alert-text">Set alert</p>
+                                <div class="menu__alert-btn">
+                                    <input type="checkbox" class="switch-btn" id="checkbox-btn">
+                                    <label for="checkbox-btn" class="switch-btn-label"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </section>
+                <!-- JOBS LIST -->
+                <section class="jobs-list">
+                    <div class="job-list__job">
+                        <div class="job-list__job-info">
+                            <div class="jobs-list__title-wrapper flex-container">
+                                <div class="jobs-list__text-left flex-container">
+                                    <div class="jobs-list__img">
+                                        <img src="./assets/images/image (1).svg" alt="Company Logo" loading="lazy">
+                                    </div>
+                                    <div class="jobs-list__title">
+                                        <h4 class="jobs-list__job-title">Gaming UI designer</h4>
+                                        <p class="jobs-list__job-company">Rockstar Games </p>
+                                    </div>
+                                </div>
+                                <div class="jobs-list__icon-right">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="jobs-list__location-info flex-container">
+                                <div class="jobs-list__location flex-container">
+                                    <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon" loading="lazy">
+                                    <p>ElMansoura, Egypt</p>
+                                </div>
+                                <div class="jobs-list__date flex-container">
+                                    <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
+                                    <p>10 days ago</p>
+                                </div>
+                            </div>
+                            <div class="jobs-list__work-info flex-container">
+                                <p class="jobs-list__exp">0 - 3y of exp</p>
+                                <p class="jobs-list__time">Full time</p>
+                                <p class="jobs-list__remote">Remote</p>
+                            </div>
+                        </div>
+                        <div class="jobs-list__categories flex-container">
+                            <p class="jobs-list__category">Creative / Design</p>&nbsp;
+                            <span class="jobs-list__span">-</span></p>&nbsp;
+                            <p class="jobs-list__category">IT / Software development</p></p>&nbsp;
+                            <span class="jobs-list__span">-</span></p>&nbsp;
+                            <p class="jobs-list__category">Gaming</p>
+                        </div>
+                    </div>
+                    <div class="job-list__job">
+                        <div class="job-list__job-info">
+                            <div class="jobs-list__title-wrapper flex-container">
+                                <div class="jobs-list__text-left flex-container">
+                                    <div class="jobs-list__img" loading="lazy">
+                                        <img src="./assets/images/image (2).svg" alt="Company Logo" loading="lazy">
+                                    </div>
+                                    <div class="jobs-list__title">
+                                        <h4 class="jobs-list__job-title">Senior UX UI Designer</h4>
+                                        <p class="jobs-list__job-company">Egabi</p>
+                                    </div>
+                                </div>
+                                <div class="jobs-list__icon-right">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="jobs-list__location-info flex-container">
+                                <div class="jobs-list__location flex-container">
+                                    <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon" loading="lazy">
+                                    <p>Cairo, Egypt</p>
+                                </div>
+                                <div class="jobs-list__date flex-container">
+                                    <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
+                                    <p>10 days ago</p>
+                                </div>
+                            </div>
+                            <div class="jobs-list__work-info flex-container">
+                                <p class="jobs-list__exp">0 - 3y of exp</p>
+                                <p class="jobs-list__time">Full time</p>
+                                <p class="jobs-list__remote">Hybrid</p>
+                            </div>
+                        </div>
+                        <div class="jobs-list__categories flex-container">
+                            <p class="jobs-list__category">Creative / Design </p>
+                            <span class="jobs-list__span">-</span>
+                            <p class="jobs-list__category">IT / Software development</p>
+                        </div>
+                    </div>
+                    <div class="job-list__job">
+                        <div class="job-list__job-info">
+                            <div class="jobs-list__title-wrapper flex-container">
+                                <div class="jobs-list__text-left flex-container">
+                                    <div class="jobs-list__img">
+                                        <img src="./assets/images/image (3).svg" alt="Company Logo" loading="lazy">
+                                    </div>
+                                    <div class="jobs-list__title">
+                                        <h4 class="jobs-list__job-title">React Frontend developer</h4>
+                                        <p class="jobs-list__job-company">Magara</p>
+                                    </div>
+                                </div>
+                                <div class="jobs-list__icon-right">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="jobs-list__location-info flex-container">
+                                <div class="jobs-list__location flex-container">
+                                    <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon" loading="lazy">
+                                    <p>Cairo, Egypt</p>
+                                </div>
+                                <div class="jobs-list__date flex-container">
+                                    <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
+                                    <p>10 days ago</p>
+                                </div>
+                            </div>
+                            <div class="jobs-list__work-info flex-container">
+                                <p class="jobs-list__exp">5 - 7y of exp</p>
+                                <p class="jobs-list__time">Freelance</p>
+                                <p class="jobs-list__remote">Remote</p>
+                            </div>
+                        </div>
+                        <div class="jobs-list__categories flex-container">
+                            <p class="jobs-list__category">Creative / Design  </p>
+                            <span class="jobs-list__span">-</span>
+                            <p class="jobs-list__category"> IT / Software development </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- PAGINATION -->
+                <section class="pagination flex-container">
+                    <span class="pagination__icon"><i class="fa-solid fa-angle-left"></i></span>
+                    <p class="pagination__nums">1</p>
+                    <p class="pagination__nums">2</p>
+                    <p class="pagination__nums">3</p>
+                    <span class="pagination__icon"><i class="fa-solid fa-angle-right"></i></span>
+                </section>
             </div>
-            <div class="menu__icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </section>
-        <!-- SIDE BAR -->
-        <aside class="side-menu">
-            <h5 class="side-menu__title">Menu</h5>
-            <ul class="side-menu__list">
-                <li class="side-menu__item">Dashboard</li>
-                <li class="side-menu__item">Job application
-                    <span class="side-menu__toggle-icon"><i class="fa-solid fa-angle-up"></i></span>
-                    <ul class="side-menu__sub-list">
-                        <li class="side-menu__sub-item">John Doe</li>
-                        <li class="side-menu__sub-item">James Bond</li>
-                    </ul>
-                </li>
-                <li class="side-menu__item">Qualifications
-                    <span class="side-menu__toggle-icon"><i class="fa-solid fa-angle-down"></i></span>
-                </li>
-                <li class="side-menu__item">About</li>
-                <li class="side-menu__item">Contact</li>
-            </ul>
-        </aside>
-        <!-- JOBS LIST -->
-        <section class="jobs-list">
-            <div class="job-list__job">
-                <div class="job-list__job-info">
-                    <div class="jobs-list__title-wrapper">
-                        <div class="jobs-list__">
-                            <img src="./assets/images/image (1).svg" alt="Company Logo" loading="lazy">
-                        </div>
-                        <div class="jobs-list__title">
-                            <h4 class="jobs-list__job-title">Gaming UI designer</h4>
-                            <p class="jobs-list__job-company">Rockstar Games </p>
-                        </div>
-                        <div class="jobs-list__icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
+            <!-- SIDE BAR -->
+            <aside class="side-menu main__left">
+                <div class="side-menu__title-wrapper flex-container">
+                    <div class="side-menu__title flex-container">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <p>Menu</p>
                     </div>
-                    <div class="jobs-list__location-info">
-                        <div class="jobs-list__location">
-                            <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon" loading="lazy">
-                            <p>ElMansoura, Egypt</p>
-                        </div>
-                        <div class="jobs-list__date">
-                            <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
-                            <p>10 days ago</p>
-                        </div>
-                    </div>
-                    <div class="jobs-list__work-info">
-                        <p class="jobs-list__exp">0 - 3y of exp</p>
-                        <p class="jobs-list__time">Full time</p>
-                        <p class="jobs-list__remote">Remote</p>
-                    </div>
+                    <span class="side-menu__settings-wrapper">
+                        <img class="side-menu__settings-icon show-settings" src="./assets/images/settings.svg" alt="Settings Icon">
+                        <span class="side-menu__toggle-open hide-edits">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                    </span>
                 </div>
-                <div class="jobs-list__categories">
-                    <p class="jobs-list__category">Creative / Design</p>
-                    <span class="jobs-list__span">-</span>
-                    <p class="jobs-list__category">IT / Software development</p>
-                    <span class="jobs-list__span">-</span>
-                    <p class="jobs-list__category">Gaming</p>
-                </div>
-            </div>
-            <div class="job-list__job">
-                <div class="job-list__job-info">
-                    <div class="jobs-list__title-wrapper">
-                        <div class="jobs-list__img" loading="lazy">
-                            <img src="./assets/images/image (2).svg" alt="Company Logo" loading="lazy">
-                        </div>
-                        <div class="jobs-list__title">
-                            <h4 class="jobs-list__job-title">Senior UX UI Designer</h4>
-                            <p class="jobs-list__job-company">Egabi</p>
-                        </div>
-                        <div class="jobs-list__icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                    <div class="jobs-list__location-info">
-                        <div class="jobs-list__location">
-                            <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon" loading="lazy">
-                            <p>Cairo, Egypt</p>
-                        </div>
-                        <div class="jobs-list__date">
-                            <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
-                            <p>10 days ago</p>
-                        </div>
-                    </div>
-                    <div class="jobs-list__work-info">
-                        <p class="jobs-list__exp">0 - 3y of exp</p>
-                        <p class="jobs-list__time">Full time</p>
-                        <p class="jobs-list__remote">Hybrid</p>
-                    </div>
-                </div>
-                <div class="jobs-list__categories">
-                    <p class="jobs-list__category">Creative / Design </p>
-                    <span class="jobs-list__span">-</span>
-                    <p class="jobs-list__category">IT / Software development</p>
-                </div>
-            </div>
-            <div class="job-list__job">
-                <div class="job-list__job-info">
-                    <div class="jobs-list__title-wrapper">
-                        <div class="jobs-list__img">
-                            <img src="./assets/images/image (3).svg" alt="Company Logo" loading="lazy">
-                        </div>
-                        <div class="jobs-list__title">
-                            <h4 class="jobs-list__job-title">React Frontend developer</h4>
-                            <p class="jobs-list__job-company">Magara</p>
-                        </div>
-                        <div class="jobs-list__icon">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                    <div class="jobs-list__location-info">
-                        <div class="jobs-list__location">
-                            <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon" loading="lazy">
-                            <p>Cairo, Egypt</p>
-                        </div>
-                        <div class="jobs-list__date">
-                            <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
-                            <p>10 days ago</p>
-                        </div>
-                    </div>
-                    <div class="jobs-list__work-info">
-                        <p class="jobs-list__exp">5 - 7y of exp</p>
-                        <p class="jobs-list__time">Freelance</p>
-                        <p class="jobs-list__remote">Remote</p>
-                    </div>
-                </div>
-                <div class="jobs-list__categories">
-                    <p class="jobs-list__category">Creative / Design  </p>
-                    <span class="jobs-list__span">-</span>
-                    <p class="jobs-list__category"> IT / Software development </p>
-                </div>
-            </div>
-            <div class="job-list job-list__desktop">
-                <div class="job-list__job">
-                    <div class="job-list__job-info">
-                        <div class="jobs-list__title-wrapper">
-                            <div class="jobs-list__img">
-                                <img src="./assets/images/image (1).svg" alt="Company Logo" loading="lazy">
-                            </div>
-                            <div class="jobs-list__title">
-                                <h4 class="jobs-list__job-title">Gaming UI designer</h4>
-                                <p class="jobs-list__job-company">Rockstar Games </p>
-                            </div>
-                            <div class="jobs-list__icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="jobs-list__location-info">
-                            <div class="jobs-list__location">
-                                <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon">
-                                <p>ElMansoura, Egypt</p>
-                            </div>
-                            <div class="jobs-list__date">
-                                <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
-                                <p>10 days ago</p>
-                            </div>
-                        </div>
-                        <div class="jobs-list__work-info">
-                            <p class="jobs-list__exp">0 - 3y of exp</p>
-                            <p class="jobs-list__time">Full time</p>
-                            <p class="jobs-list__remote">Remote</p>
-                        </div>
-                    </div>
-                    <div class="jobs-list__categories">
-                        <p class="jobs-list__category">Creative / Design</p>
-                        <span class="jobs-list__span">-</span>
-                        <p class="jobs-list__category">IT / Software development</p>
-                        <span class="jobs-list__span">-</span>
-                        <p class="jobs-list__category">Gaming</p>
-                    </div>
-                </div>
-                <div class="job-list__job">
-                    <div class="job-list__job-info">
-                        <div class="jobs-list__title-wrapper">
-                            <div class="jobs-list__img">
-                                <img src="./assets/images/image (2).svg" alt="Company Logo" loading="lazy">
-                            </div>
-                            <div class="jobs-list__title">
-                                <h4 class="jobs-list__job-title">Senior UX UI Designer</h4>
-                                <p class="jobs-list__job-company">Egabi</p>
-                            </div>
-                            <div class="jobs-list__icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="jobs-list__location-info">
-                            <div class="jobs-list__location">
-                                <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon">
-                                <p>Cairo, Egypt</p>
-                            </div>
-                            <div class="jobs-list__date">
-                                <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
-                                <p>10 days ago</p>
-                            </div>
-                        </div>
-                        <div class="jobs-list__work-info">
-                            <p class="jobs-list__exp">0 - 3y of exp</p>
-                            <p class="jobs-list__time">Full time</p>
-                            <p class="jobs-list__remote">Hybrid</p>
-                        </div>
-                    </div>
-                    <div class="jobs-list__categories">
-                        <p class="jobs-list__category">Creative / Design </p>
-                        <span class="jobs-list__span">-</span>
-                        <p class="jobs-list__category">IT / Software development</p>
-                    </div>
-                </div>
-                <div class="job-list__job">
-                    <div class="job-list__job-info">
-                        <div class="jobs-list__title-wrapper">
-                            <div class="jobs-list__img">
-                                <img src="./assets/images/image (3).svg" alt="Company Logo" loading="lazy">
-                            </div>
-                            <div class="jobs-list__title">
-                                <h4 class="jobs-list__job-title">React Frontend developer</h4>
-                                <p class="jobs-list__job-company">Magara</p>
-                            </div>
-                            <div class="jobs-list__icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="jobs-list__location-info">
-                            <div class="jobs-list__location">
-                                <img src="./assets/images/grommet-icons_location-pin.svg" alt="Location Icon">
-                                <p>Cairo, Egypt</p>
-                            </div>
-                            <div class="jobs-list__date">
-                                <img src="./assets/images/date.svg" alt="Calender Icon" loading="lazy">
-                                <p>10 days ago</p>
-                            </div>
-                        </div>
-                        <div class="jobs-list__work-info">
-                            <p class="jobs-list__exp">5 - 7y of exp</p>
-                            <p class="jobs-list__time">Freelance</p>
-                            <p class="jobs-list__remote">Remote</p>
-                        </div>
-                    </div>
-                    <div class="jobs-list__categories">
-                        <p class="jobs-list__category">Creative / Design  </p>
-                        <span class="jobs-list__span">-</span>
-                        <p class="jobs-list__category"> IT / Software development </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- PAGINATION -->
-        <section class="pagination">
-            <span class="pagination__icon"><i class="fa-solid fa-angle-left"></i></span>
-            <p class="pagination__nums">1</p>
-            <p class="pagination__nums">2</p>
-            <p class="pagination__nums">3</p>
-            <span class="pagination__icon"><i class="fa-solid fa-angle-right"></i></span>
-        </section>
+                <ul class="side-menu__list flex-container">
+                    <li class="side-menu__item flex-container">
+                        <span class="side-menu__ellipsis flex-container">
+                            <span class="side-menu__ellipsis-icons">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <p>Dashboard</p>
+                        </span>
+                        <span class="side-menu__edit-icons">
+                            <img src="./assets/images/pen.svg" alt="Edit Icon">
+                            <img class="eye-icon" src="./assets/images/eye.svg" alt="Hide Icon">
+                            <div class="eye-line"></div>
+                        </span>
+                    </li>
+                    <li class="side-menu__item job">
+                        <span class="side-menu__job flex-container">
+                            <span class="side-menu__ellipsis flex-container">
+                                <span class="side-menu__ellipsis-icons">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </span>
+                                <p>Job application</p>
+                            </span>
+                            <span class="side-menu__edit-icons">
+                                <img src="./assets/images/pen.svg" alt="Edit Icon">
+                                <img class="eye-icon" src="./assets/images/eye.svg" alt="Hide Icon">
+                                <div class="eye-line"></div>
+                            </span>
+                            <span class="side-menu__toggle-icon"><i class="fa-solid fa-angle-up"></i></span>
+                        </span>
+                        <span class="side-menu__list side-menu__sub-list flex-container">
+                            <li class="side-menu__item side-menu__sub-item flex-container">
+                                <span class="side-menu__ellipsis flex-container">
+                                    <span class="side-menu__ellipsis-icons">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                    <p>John Doe</p>
+                                </span>
+                                <span class="side-menu__edit-icons">
+                                    <img src="./assets/images/pen.svg" alt="Edit Icon">
+                                    <img  src="./assets/images/eye.svg" alt="Hide Icon">
+                                    <div class="eye-line"></div>
+                                </span>
+                            </li>
+                            <li class="side-menu__item side-menu__sub-item flex-container">
+                                <span class="side-menu__ellipsis flex-container">
+                                    <span class="side-menu__ellipsis-icons">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                    <span>James Bond</span>
+                                </span>
+                                <span class="side-menu__edit-icons">
+                                    <img src="./assets/images/pen.svg" alt="Edit Icon">
+                                    <img class="eye-icon" src="./assets/images/eye.svg" alt="Hide Icon">
+                                    <div class="eye-line"></div>
+                                </span>
+                            </li>
+                            <li class="side-menu__item side-menu__sub-item last-item flex-container">
+                                <span class="side-menu__ellipsis last flex-container">
+                                    <span class="side-menu__ellipsis-icons">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                    <p>Scarlett Johansson</p>
+                                </span>
+                                <span class="side-menu__edit-icons">
+                                    <img src="./assets/images/pen.svg" alt="Edit Icon">
+                                    <img src="./assets/images/eye.svg" alt="Hide Icon">
+                                </span>
+                            </li>
+                        </span>
+                    </li>
+                    <li class="side-menu__item flex-container">
+                        <span class="side-menu__ellipsis flex-container">
+                            <span class="side-menu__ellipsis-icons">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <p>Qualifications</p>
+                        </span>
+                        <span class="side-menu__edit-icons">
+                            <img src="./assets/images/pen.svg" alt="Edit Icon">
+                            <img class="eye-icon" src="./assets/images/eye.svg" alt="Hide Icon">
+                            <div class="eye-line"></div>
+                        </span>
+                        <span class="side-menu__toggle-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </li>
+                    <li class="side-menu__item flex-container">
+                        <span class="side-menu__ellipsis flex-container">
+                            <span class="side-menu__ellipsis-icons">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <p>About</p>
+                        </span>
+                        <span class="side-menu__edit-icons">
+                            <img src="./assets/images/pen.svg" alt="Edit Icon">
+                            <img class="eye-icon" src="./assets/images/eye.svg" alt="Hide Icon">
+                            <div class="eye-line"></div>
+                        </span>
+                    </li>
+                    <li class="side-menu__item flex-container">
+                        <span class="side-menu__ellipsis flex-container">
+                            <span class="side-menu__ellipsis-icons">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                            <p>Contact</p>
+                        </span>
+                        <span class="side-menu__edit-icons">
+                            <img src="./assets/images/pen.svg" alt="Edit Icon">
+                            <img class="eye-icon" src="./assets/images/eye.svg" alt="Hide Icon">
+                            <div class="eye-line"></div>
+                        </span>
+                    </li>
+                </ul>
+                <p class="side-menu__cancel">Cancel</p>
+            </aside>
+        </div>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
